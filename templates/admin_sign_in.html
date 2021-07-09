@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Admin Sign In </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body bgcolor="teal">
+        <div>
+            <form align="center" action = "/admin_signin" method = "POST">
+                <h1 align="center">Admin Sign In</h1>
+                <label align="center"> Username </label>
+                <input align="center" name = 'admin_username' type = 'email' placeholder="Enter admin Username" required><br><br>
+                <label align="center"> Password </label>
+                <input align="center" name = 'admin_password' type = 'password' placeholder="Enter admin Password" required><br><br>
+                <input align="center" type="submit" value="Login"><br><br>
+            </form>
+            <div>
+                <form align="center" action="/user_signin">
+                    <label align="center">  Normal User </label>
+                    <input align="center" type="submit" value="Sign In">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
