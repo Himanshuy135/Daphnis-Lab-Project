@@ -3,24 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title> Admin Sign In </title>
-        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
     </head>
-    <body bgcolor="teal">
-        <div>
-            <form align="center" action = "/admin_signin" method = "POST">
-                <h1 align="center">Admin Sign In</h1>
-                <label align="center"> Username </label>
-                <input align="center" name = 'admin_username' type = 'email' placeholder="Enter admin Username" required><br><br>
-                <label align="center"> Password </label>
-                <input align="center" name = 'admin_password' type = 'password' placeholder="Enter admin Password" required><br><br>
-                <input align="center" type="submit" value="Login"><br><br>
+    <body >
+        <div class="box" >
+            <form action = "/admin_signin" method = "POST">
+                <h1 >Admin Sign In</h1>
+                <input name = 'admin_username' type = 'email' placeholder="Enter admin Username" required>
+                <input name = 'admin_password' type = 'password' placeholder="Enter admin Password" required>
+                <div class="msg"> {{ msg }} </div>
+                <input type="submit" value="Login">
             </form>
-            <div>
-                <form align="center" action="/user_signin">
-                    <label align="center">  Normal User </label>
-                    <input align="center" type="submit" value="Sign In">
-                </form>
-            </div>
+
+            <form align="center" action="/user_signin">
+                <input align="center" type="submit" value="User Sign In">
+            </form>
         </div>
     </body>
 </html>
