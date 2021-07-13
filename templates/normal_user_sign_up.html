@@ -9,8 +9,11 @@
 <div class="box" >
     <form action="/user_signup" method = "POST">
         <h1>Sign Up</h1>
+        <label>Name</label>
         <input align="center" name = 'one' type = 'text' placeholder="Enter Name" id="name">
+        <label>Username</label>
         <input align="center" name = 'two' type = 'email' placeholder="Enter Username" id="email">
+        <label>Password</label>
         <input align="center" name = 'three' type = 'password' placeholder="Enter Password" id="password">
         <div class="msg"> {{ msg }} </div>
         <input align="center" type="submit" value="Sign Up">

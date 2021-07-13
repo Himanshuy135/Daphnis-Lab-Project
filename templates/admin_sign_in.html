@@ -9,7 +9,9 @@
         <div class="box" >
             <form action = "/admin_signin" method = "POST">
                 <h1 >Admin Sign In</h1>
+                <label>Username</label>
                 <input name = 'admin_username' type = 'email' placeholder="Enter admin Username" required>
+                <label>Password</label>
                 <input name = 'admin_password' type = 'password' placeholder="Enter admin Password" required>
                 <div class="msg"> {{ msg }} </div>
                 <input type="submit" value="Login">
